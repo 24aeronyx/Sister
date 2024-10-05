@@ -25,6 +25,8 @@ if __name__ == '__main__':
 ## 127.0.0.1 - - [05/Oct/2024 06:31:57] "POST /request HTTP/1.1" 200 -
 ## 127.0.0.1 - - [05/Oct/2024 06:38:31] "POST /request HTTP/1.1" 200 -
 
-# Skenario Pengiriman Notifikasi Real-Time untuk Publish-Subscribe
-## Pengguna berlangganan ke layanan notifikasi penawaran terbaru dari beberapa kategori produk di aplikasi berita. Saat ada berita baru yang relevan diterbitkan, pelanggan akan langsung menerima pemberitahuan real-time.
-## Penanganan skenario di mana pelanggan tidak aktif saat pesan dikirim, memastikan pesan tetap sampai ketika pelanggan kembali aktif.
+# Skenario E-Commerce untuk Request-Response
+## Seorang pengguna melakukan pencarian produk di platform e-commerce, kemudian mengajukan permintaan untuk menambahkan produk tersebut ke dalam keranjang. Server kemudian merespons dengan memvalidasi stok dan menambahkannya ke keranjang pengguna.
+
+# Tantangan
+## Penanganan waktu respons yang cepat serta penanganan skenario seperti produk habis atau gagal menambahkan produk ke keranjang.

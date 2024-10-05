@@ -39,10 +39,8 @@ except KeyboardInterrupt:
 ## Message received: Hello Subscribers!
 ## Message received: Rucne: keren
 
-# Skenario E-Commerce untuk Request-Response
-## Seorang pengguna melakukan pencarian produk di platform e-commerce, kemudian mengajukan permintaan untuk menambahkan produk tersebut ke dalam keranjang. Server kemudian merespons dengan memvalidasi stok dan menambahkannya ke keranjang pengguna.
-
-# Tantangan
-## Penanganan waktu respons yang cepat serta penanganan skenario seperti produk habis atau gagal menambahkan produk ke keranjang.
-
 # Program stopped by user (Ctrl + C).   
+
+# Skenario Pengiriman Notifikasi Real-Time untuk Publish-Subscribe
+## Pengguna berlangganan ke layanan notifikasi penawaran terbaru dari beberapa kategori produk di aplikasi berita. Saat ada berita baru yang relevan diterbitkan, pelanggan akan langsung menerima pemberitahuan real-time.
+## Penanganan skenario di mana pelanggan tidak aktif saat pesan dikirim, memastikan pesan tetap sampai ketika pelanggan kembali aktif.
