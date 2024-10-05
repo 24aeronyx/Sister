@@ -23,3 +23,26 @@ def publish_message(message):
 
 # Example usage
 publish_message("Hello Subscribers!") # Contoh pemanggilan fungsi publish_message untuk mengirimkan pesan "Hello Subscribers!" ke topik "test/topic". Pesan ini akan diterima oleh semua klien yang telah berlangganan topik tersebut.
+
+# Buat loop yang terus berjalan hingga program dihentikan secara manual
+try:
+    while True:
+        # Program akan terus berjalan di sini.
+        pass  # Anda bisa memasukkan logika tambahan di sini jika diperlukan.
+except KeyboardInterrupt:
+    print("\nProgram stopped by user (Ctrl + C).")
+    client.loop_stop()  # Hentikan loop MQTT saat keluar
+    client.disconnect()  # Putuskan koneksi dengan broker
+
+# Test
+## Message received: waiting ...
+## Message received: Hello Subscribers!
+## Message received: Rucne: keren
+
+# Skenario E-Commerce untuk Request-Response
+## Seorang pengguna melakukan pencarian produk di platform e-commerce, kemudian mengajukan permintaan untuk menambahkan produk tersebut ke dalam keranjang. Server kemudian merespons dengan memvalidasi stok dan menambahkannya ke keranjang pengguna.
+
+# Tantangan
+## Penanganan waktu respons yang cepat serta penanganan skenario seperti produk habis atau gagal menambahkan produk ke keranjang.
+
+# Program stopped by user (Ctrl + C).   
