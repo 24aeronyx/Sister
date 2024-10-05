@@ -20,5 +20,11 @@ def request_response(): # Fungsi komunikasi request-response
 if __name__ == '__main__':
     app.run(port=5000) # Set PORT di PORT 5000
 
-# 127.0.0.1 - - [05/Oct/2024 06:31:57] "POST /request HTTP/1.1" 200 -
-# 127.0.0.1 - - [05/Oct/2024 06:38:31] "POST /request HTTP/1.1" 200 -
+
+# Test
+## 127.0.0.1 - - [05/Oct/2024 06:31:57] "POST /request HTTP/1.1" 200 -
+## 127.0.0.1 - - [05/Oct/2024 06:38:31] "POST /request HTTP/1.1" 200 -
+
+# Skenario Pengiriman Notifikasi Real-Time untuk Publish-Subscribe
+## Pengguna berlangganan ke layanan notifikasi penawaran terbaru dari beberapa kategori produk di aplikasi berita. Saat ada berita baru yang relevan diterbitkan, pelanggan akan langsung menerima pemberitahuan real-time.
+## Penanganan skenario di mana pelanggan tidak aktif saat pesan dikirim, memastikan pesan tetap sampai ketika pelanggan kembali aktif.
